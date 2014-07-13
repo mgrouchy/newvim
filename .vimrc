@@ -1,33 +1,9 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
-Plugin 'rking/ag.vim'  "Silver Searcher
-Plugin 'kien/ctrlp.vim'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
-Plugin 'myusuf3/numbers.vim'
-Plugin 'klen/python-mode'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-repeat'
-Plugin 'sjl/vitality.vim'
-Plugin 'bling/vim-airline'
-Plugin 'davidhalter/jedi-vim'
-
-call vundle#end()            " required
-filetype plugin indent on    " required
+if filereadable(expand("~/.vim/.vimrc.plugins"))
+	source ~/.vim/.vimrc.plugins
+endif
 
 set nowrap "don't wrap lines
 set background=dark "colorscheme
@@ -84,9 +60,6 @@ au FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
 au FileType html setlocal ts=2 sts=2 sw=2 noexpandtab
 au FileType css setlocal ts=2 sts=2 sw=2 noexpandtab
 au BufWritePre * :%s/\s\+$//e
-
-"everytime I save .vimrc, source the vimrc
-au bufwritepost .vimrc source $MYVIMRC
 
 set listchars=tab:▸\ ,eol:¬
 
