@@ -80,6 +80,7 @@ if has("unix")
 endif
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.git,.hg/,.svn/
+let NERDTreeIgnore = ['\.pyc$', '\.swp$', '\.git$', '\.ropeproject/$']
 
 " Fix Cursor in TMUX
 if exists('$TMUX')
