@@ -115,7 +115,7 @@ cmap w!! w !sudo tee %
 imap jj <Esc>
 noremap <leader><space> :noh<cr>:call clearmatches()<cr>
 nmap <leader>l :set list!<CR>
-nmap <leader>a <Esc>:Ag
+nmap <leader>a <Esc>:Ag<space>
 nmap <leader>cb :CtrlPBuffer<CR>
 nmap <leader>nd :NERDTreeToggle<CR>
 nmap <leader>gg :GitGutterToggle<CR>
