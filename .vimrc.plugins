@@ -22,6 +22,10 @@ Plugin 'tpope/vim-repeat'
 Plugin 'sjl/vitality.vim'
 Plugin 'bling/vim-airline'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'pangloss/vim-javascript'
+Plugin 'wookiehangover/jshint.vim'
+Plugin 'ervandew/supertab'
 
 call vundle#end()            " required
 filetype plugin indent on    " required

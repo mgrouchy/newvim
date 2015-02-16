@@ -6,7 +6,7 @@ if filereadable(expand("~/.vim/.vimrc.plugins"))
 endif
 
 set nowrap "don't wrap lines
-set background=dark "colorscheme
+set background=light "colorscheme
 colorscheme solarized
 set number "Turn on line numbers
 set numberwidth=4
